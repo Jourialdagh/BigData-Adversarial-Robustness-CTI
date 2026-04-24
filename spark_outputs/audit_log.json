@@ -1,0 +1,57 @@
+{
+  "pipeline": "A3L CTI Big Data Pipeline",
+  "timestamp": "2026-04-15T14:16:19.047621",
+  "stages": {
+    "ingestion": {
+      "splits_loaded": [
+        "train",
+        "dev",
+        "test"
+      ],
+      "total_records": 6699,
+      "recorded_at": "2026-04-15T14:16:19.047668"
+    },
+    "etl": {
+      "per_split_records": {
+        "train": 4019,
+        "dev": 855,
+        "test": 1825
+      },
+      "avg_word_count_train": 31.8,
+      "recorded_at": "2026-04-15T14:16:19.047720"
+    },
+    "detection": {
+      "thresholds": {
+        "short_threshold": 3,
+        "long_threshold": 84
+      },
+      "per_split_anomalies": {
+        "train": {
+          "clean": 4019,
+          "anomaly": 0
+        },
+        "dev": {
+          "clean": 855,
+          "anomaly": 0
+        },
+        "test": {
+          "clean": 1825,
+          "anomaly": 0
+        }
+      },
+      "recorded_at": "2026-04-15T14:16:19.047735"
+    },
+    "ml_analytics": {
+      "clean_accuracy": 0.8225,
+      "accuracy_under_attack": 0.8181,
+      "accuracy_after_defense": 0.8186,
+      "accuracy_drop_pct": 0.44,
+      "accuracy_recovery_pct": 0.05,
+      "recorded_at": "2026-04-15T14:16:19.047748"
+    },
+    "pipeline_runtime": {
+      "total_elapsed_seconds": 187.57,
+      "recorded_at": "2026-04-15T14:16:19.047765"
+    }
+  }
+}

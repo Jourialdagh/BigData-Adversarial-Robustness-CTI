@@ -1,0 +1,40 @@
+{
+  "clean_baseline": {
+    "model": "LogReg_clean",
+    "accuracy": 0.8225,
+    "f1_weighted": 0.7624,
+    "precision_weighted": 0.7403,
+    "recall_weighted": 0.8225,
+    "train_time_s": 43.02,
+    "train_records": 4019,
+    "test_records": 1825
+  },
+  "adversarial_attack": {
+    "model": "LogReg_clean_vs_adv",
+    "accuracy": 0.8181,
+    "f1_weighted": 0.752,
+    "precision_weighted": 0.7136,
+    "recall_weighted": 0.8181,
+    "train_time_s": 12.09,
+    "train_records": 4019,
+    "test_records": 1825
+  },
+  "adversarial_defense": {
+    "model": "LogReg_adv_training",
+    "accuracy": 0.8186,
+    "f1_weighted": 0.7576,
+    "precision_weighted": 0.7291,
+    "recall_weighted": 0.8186,
+    "train_time_s": 20.31,
+    "train_records": 8038,
+    "test_records": 1825
+  },
+  "robustness_summary": {
+    "clean_accuracy": 0.8225,
+    "accuracy_under_attack": 0.8181,
+    "accuracy_after_defense": 0.8186,
+    "accuracy_drop_pct": 0.44,
+    "accuracy_recovery_pct": 0.05,
+    "attack_success_rate": 0.0053
+  }
+}
